@@ -144,7 +144,7 @@
     ]
   },
   "aggregations" : {
-    "line_loader.delay" : {
+    "line_loader_delay" : {
       "value" : 1.851073682308197
     }
   }
