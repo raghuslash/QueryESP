@@ -1,1 +1,1 @@
-{"query":{"bool":{"must":[{"match":{"device":"reflowoven"}},{"match":{"state":2}}],"filter":{"range":{"timestamp":{"gte":"now-60m"}}}}},"aggs":{"reflowoven.setup_delay":{"avg":{"field":"working_time"}},"reflowoven.setup_energy":{"avg":{"field":"energy"}}}}
+{"query":{"bool":{"must":[{"match":{"device":"reflowoven"}},{"match":{"state":2}}],"filter":{"range":{"timestamp":{"gte":"now-60m"}}}}},"aggs":{"reflowoven_setup_delay":{"avg":{"field":"working_time"}},"reflowoven_setup_energy":{"avg":{"field":"energy"}}}}

@@ -1,1 +1,1 @@
-{"query":{"bool":{"must":[{"match":{"device":"screenprinter"}},{"match":{"event":1}}],"filter":{"range":{"timestamp":{"gte":"now-60m"}}}}},"aggs":{"screen_printer.printing_delay":{"avg":{"field":"working_time"}},"screen_printer.printing_energy":{"avg":{"field":"energy"}}}}
+{"query":{"bool":{"must":[{"match":{"device":"screenprinter"}},{"match":{"event":1}}],"filter":{"range":{"timestamp":{"gte":"now-60m"}}}}},"aggs":{"screen_printer_printing_delay":{"avg":{"field":"working_time"}},"screen_printer_printing_energy":{"avg":{"field":"energy"}}}}
