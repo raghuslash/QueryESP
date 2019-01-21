@@ -1,0 +1,1 @@
+{"query":{"bool":{"must":[{"match":{"device":"reflowoven"}},{"match":{"state":1}}],"filter":{"range":{"timestamp":{"gte":"now-60m"}}}}},"aggs":{"reflowoven.maintain_delay":{"avg":{"field":"working_time"}},"reflowoven.maintain_energy":{"avg":{"field":"energy"}}}}
