@@ -2,6 +2,7 @@
 
 sh runEventQ.sh queries/loader1Q.json
 t=$(cat temp | jq '.aggregations.line_loader_delay.value')
+t=$("`echo "scale = 3; $t" | bc -l`")
 echo "line_loader.delay: $t" > DTparameters.txt
 
 
