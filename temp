@@ -1,5 +1,5 @@
 {
-  "took" : 1,
+  "took" : 2,
   "timed_out" : false,
   "_shards" : {
     "total" : 25,
@@ -8,144 +8,16 @@
     "failed" : 0
   },
   "hits" : {
-    "total" : 18,
-    "max_score" : 2.023561,
-    "hits" : [
-      {
-        "_index" : "streamingevents-2019-01-21",
-        "_type" : "mydoctype",
-        "_id" : "LDAOcGgBo8U3TmlMK9VV",
-        "_score" : 2.023561,
-        "_source" : {
-          "timestamp" : "2019-01-21T10:29:42.833005",
-          "event" : 1,
-          "working_time" : 1.6523699092,
-          "energy" : null,
-          "device" : "loader"
-        }
-      },
-      {
-        "_index" : "streamingevents-2019-01-21",
-        "_type" : "mydoctype",
-        "_id" : "LjAOcGgBo8U3TmlMK9VV",
-        "_score" : 2.023561,
-        "_source" : {
-          "timestamp" : "2019-01-21T10:31:29.563927",
-          "event" : 1,
-          "working_time" : 1.5730697392,
-          "energy" : null,
-          "device" : "loader"
-        }
-      },
-      {
-        "_index" : "streamingevents-2019-01-21",
-        "_type" : "mydoctype",
-        "_id" : "MjAOcGgBo8U3TmlMK9VV",
-        "_score" : 2.023561,
-        "_source" : {
-          "timestamp" : "2019-01-21T10:36:47.655252",
-          "event" : 1,
-          "working_time" : 1.7770322388,
-          "energy" : null,
-          "device" : "loader"
-        }
-      },
-      {
-        "_index" : "streamingevents-2019-01-21",
-        "_type" : "mydoctype",
-        "_id" : "NjAOcGgBo8U3TmlMK9VV",
-        "_score" : 2.023561,
-        "_source" : {
-          "timestamp" : "2019-01-21T10:38:26.109356",
-          "event" : 1,
-          "working_time" : 2.1056108841,
-          "energy" : null,
-          "device" : "loader"
-        }
-      },
-      {
-        "_index" : "streamingevents-2019-01-21",
-        "_type" : "mydoctype",
-        "_id" : "MDAOcGgBo8U3TmlMK9VV",
-        "_score" : 2.023561,
-        "_source" : {
-          "timestamp" : "2019-01-21T10:32:53.194179",
-          "event" : 1,
-          "working_time" : 1.7697443207,
-          "energy" : null,
-          "device" : "loader"
-        }
-      },
-      {
-        "_index" : "streamingevents-2019-01-21",
-        "_type" : "mydoctype",
-        "_id" : "MzAOcGgBo8U3TmlMK9VV",
-        "_score" : 2.023561,
-        "_source" : {
-          "timestamp" : "2019-01-21T10:36:59.977713",
-          "event" : 1,
-          "working_time" : 1.5991095684,
-          "energy" : null,
-          "device" : "loader"
-        }
-      },
-      {
-        "_index" : "streamingevents-2019-01-21",
-        "_type" : "mydoctype",
-        "_id" : "NDAOcGgBo8U3TmlMK9VV",
-        "_score" : 2.023561,
-        "_source" : {
-          "timestamp" : "2019-01-21T10:37:27.020025",
-          "event" : 1,
-          "working_time" : 1.8389626674,
-          "energy" : null,
-          "device" : "loader"
-        }
-      },
-      {
-        "_index" : "streamingevents-2019-01-21",
-        "_type" : "mydoctype",
-        "_id" : "NTAOcGgBo8U3TmlMK9VV",
-        "_score" : 2.023561,
-        "_source" : {
-          "timestamp" : "2019-01-21T10:38:09.135387",
-          "event" : 1,
-          "working_time" : 2.0217851261,
-          "energy" : null,
-          "device" : "loader"
-        }
-      },
-      {
-        "_index" : "streamingevents-2019-01-21",
-        "_type" : "mydoctype",
-        "_id" : "NzAOcGgBo8U3TmlMK9VV",
-        "_score" : 2.023561,
-        "_source" : {
-          "timestamp" : "2019-01-21T10:39:35.771806",
-          "event" : 1,
-          "working_time" : 1.7730564029,
-          "energy" : null,
-          "device" : "loader"
-        }
-      },
-      {
-        "_index" : "streamingevents-2019-01-21",
-        "_type" : "mydoctype",
-        "_id" : "VDAbcGgBo8U3TmlM7tXJ",
-        "_score" : 2.023561,
-        "_source" : {
-          "timestamp" : "2019-01-21T10:45:27.791497",
-          "event" : 1,
-          "working_time" : 1.6708345662,
-          "energy" : null,
-          "device" : "loader"
-        }
-      }
-    ]
+    "total" : 0,
+    "max_score" : null,
+    "hits" : [ ]
   },
   "aggregations" : {
-    "line_loader_delay" : {
-      "value" : 1.851073682308197
+    "reflowoven_setup_energy" : {
+      "value" : null
+    },
+    "reflowoven_setup_delay" : {
+      "value" : null
     }
   }
 }

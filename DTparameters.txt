@@ -1,0 +1,5 @@
+scale=2;line_loader.delay: 0
+scale=2;screen_printer.printing_delay: 0
+scale=2;screen_printer.cleaning_delay: 12.258593797683716
+scale=2;pick_and_place_1.processing_delay: 77.40364527702332
+scale=2;pick_and_place_2.processing_delay: 57.56283097040085
