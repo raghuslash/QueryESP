@@ -18,6 +18,7 @@ p0=$(bc -l <<< "scale=0;`echo $e` / `echo $t`")
 sh runEventQ.sh queries/screenprinter1Q.json
 t=$(cat temp | jq '.aggregations.screen_printer_printing_delay.value')
 e=$(cat temp | jq '.aggregations.screen_printer_printing_energy.value')
+p=$(cat temp | jq '.hits.total')
 t=$(bc -l <<< "scale=1; $t/1")
 e=$(bc -l <<< "scale=1; $e*3600000/1")
 p1=$(bc -l <<< "scale=0;`echo $e` / `echo $t`")
@@ -27,10 +28,17 @@ echo "screen_printer.printing_delay=$t" >> DTparameters.txt
 sh runEventQ.sh queries/screenprinter2Q.json
 t=$(cat temp | jq '.aggregations.screen_printer_cleaning_delay.value')
 e=$(cat temp | jq '.aggregations.screen_printer_cleaning_energy.value')
+c=$(cat temp | jq '.hits.total')
 t=$(bc -l <<< "scale=1; $t/1")
 e=$(bc -l <<< "scale=1; $e*3600000/1")
 p2=$(bc -l <<< "scale=0;`echo $e` / `echo $t`")
+ratio=$((($p+$c-1)/$c))
+
+
 echo "screen_printer.cleaning_delay=$t" >> DTparameters.txt
+echo "screen_printer.num_pcbs_per_cleaning=$ratio" >> DTparameters.txt
+
+
 
 echo "screen_printer.set_power_ratings([$p0,$p0,$p1,$p2,$p0])" >> DTparameters.txt
 

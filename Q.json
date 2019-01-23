@@ -1,1 +1,1 @@
-{"query":{"bool":{"must":[{"match":{"device":"loader"}}],"filter":{"range":{"timestamp":{"gte":"now-60m"}}}}},"aggs":{"line_loader.delay":{"avg":{"field":"working_time"}}}}
+{"query":{"bool":{"must":[{"match":{"device":"screenprinter"}},{"match":{"event":2}}],"filter":{"range":{"timestamp":{"gte":"now-60m"}}}}}}
