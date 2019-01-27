@@ -1,2 +1,1 @@
 {"query":{"bool":{"must":[{"match":{"device":"loader"}}],"filter":{"range":{"timestamp":{"gte":"now-60m"}}}}},"aggs":{"line_loader_delay":{"avg":{"field":"working_time"}}}}
-
