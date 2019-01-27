@@ -1,27 +1,7 @@
 {
     "query" : {
-    "bool": {
-      "must": [
-        {
-          "match": {
-            "device": "screenprinter"
-          }
-        },
-        {
-          "match": {
-            "event": 1
-          }
-        }
-      ],
-      "filter": {
-        "range": {
-          "timestamp": {
-            "gte": "now-7d"
-          }
-        }
-      }
-}
-},
+        "match_all": {}
+    },
     
     "_source" : ["energy", "working_time"],
 

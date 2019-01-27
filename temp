@@ -2,22 +2,88 @@
   "took" : 3,
   "timed_out" : false,
   "_shards" : {
-    "total" : 30,
-    "successful" : 30,
+    "total" : 35,
+    "successful" : 35,
     "skipped" : 0,
     "failed" : 0
   },
   "hits" : {
-    "total" : 0,
-    "max_score" : null,
-    "hits" : [ ]
+    "total" : 5,
+    "max_score" : 1.0512933,
+    "hits" : [
+      {
+        "_index" : "streamingstates-2019-01-24",
+        "_type" : "mydoctype",
+        "_id" : "DWY-fmgBzz0aNxP3e9tP",
+        "_score" : 1.0512933,
+        "_source" : {
+          "timestamp" : "2019-01-24T04:38:53.369396",
+          "state" : 2.0,
+          "working_time" : 3.0,
+          "energy" : 0.0239097778,
+          "device" : "reflowoven"
+        }
+      },
+      {
+        "_index" : "streamingstates-2019-01-24",
+        "_type" : "mydoctype",
+        "_id" : "A2YwfmgBzz0aNxP3hdtn",
+        "_score" : 1.0425596,
+        "_source" : {
+          "timestamp" : "2019-01-24T04:34:45.667957",
+          "state" : 2.0,
+          "working_time" : 4.0,
+          "energy" : 0.0256648056,
+          "device" : "reflowoven"
+        }
+      },
+      {
+        "_index" : "streamingstates-2019-01-24",
+        "_type" : "mydoctype",
+        "_id" : "AmYwfmgBzz0aNxP3hdtn",
+        "_score" : 1.0363677,
+        "_source" : {
+          "timestamp" : "2019-01-24T04:32:25.274627",
+          "state" : 2.0,
+          "working_time" : 233.0,
+          "energy" : 1.5426975278,
+          "device" : "reflowoven"
+        }
+      },
+      {
+        "_index" : "streamingstates-2019-01-24",
+        "_type" : "mydoctype",
+        "_id" : "DGY-fmgBzz0aNxP3e9tP",
+        "_score" : 1.0363677,
+        "_source" : {
+          "timestamp" : "2019-01-24T04:38:19.102932",
+          "state" : 2.0,
+          "working_time" : 21.0,
+          "energy" : 0.1332338889,
+          "device" : "reflowoven"
+        }
+      },
+      {
+        "_index" : "streamingstates-2019-01-24",
+        "_type" : "mydoctype",
+        "_id" : "DmY-fmgBzz0aNxP3e9tP",
+        "_score" : 1.0363677,
+        "_source" : {
+          "timestamp" : "2019-01-24T04:40:08.458024",
+          "state" : 2.0,
+          "working_time" : 14.0,
+          "energy" : 0.0866767778,
+          "device" : "reflowoven"
+        }
+      }
+    ]
   },
   "aggregations" : {
     "reflowoven_setup_energy" : {
-      "value" : null
+      "value" : 0.3624365597963333
     },
     "reflowoven_setup_delay" : {
-      "value" : null
+      "value" : 55.0
     }
   }
 }
