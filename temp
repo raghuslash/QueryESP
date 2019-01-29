@@ -1,21 +1,177 @@
 {
-  "error" : {
-    "root_cause" : [
-      {
-        "type" : "x_content_parse_exception",
-        "reason" : "[1:236] [script] failed to parse field [source]"
-      }
-    ],
-    "type" : "x_content_parse_exception",
-    "reason" : "[1:236] [script] failed to parse field [source]",
-    "caused_by" : {
-      "type" : "unchecked_i_o_exception",
-      "reason" : "com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input in VALUE_STRING\n at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@3ae86dee; line: 1, column: 527]",
-      "caused_by" : {
-        "type" : "json_e_o_f_exception",
-        "reason" : "Unexpected end-of-input in VALUE_STRING\n at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@3ae86dee; line: 1, column: 527]"
-      }
-    }
+  "took" : 4,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 60,
+    "successful" : 60,
+    "skipped" : 0,
+    "failed" : 0
   },
-  "status" : 400
+  "hits" : {
+    "total" : 43,
+    "max_score" : 2.4194798,
+    "hits" : [
+      {
+        "_index" : "streamingevents-2019-01-29",
+        "_type" : "mydoctype",
+        "_id" : "wmbtmGgBzz0aNxP3QPz9",
+        "_score" : 2.4194798,
+        "_source" : {
+          "working_time" : 2.0694444444,
+          "energy" : 3.648056E-4
+        },
+        "fields" : {
+          "power" : [
+            634.614851998873
+          ]
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-01-29",
+        "_type" : "mydoctype",
+        "_id" : "xWbtmGgBzz0aNxP3QPz9",
+        "_score" : 2.4194798,
+        "_source" : {
+          "working_time" : 16.7777777778,
+          "energy" : 0.0036269722
+        },
+        "fields" : {
+          "power" : [
+            778.2377051292957
+          ]
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-01-29",
+        "_type" : "mydoctype",
+        "_id" : "xmbtmGgBzz0aNxP3QPz9",
+        "_score" : 2.4194798,
+        "_source" : {
+          "working_time" : 1.1111111111,
+          "energy" : 2.964444E-4
+        },
+        "fields" : {
+          "power" : [
+            960.4798078755232
+          ]
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-01-29",
+        "_type" : "mydoctype",
+        "_id" : "z2btmGgBzz0aNxP3QPz9",
+        "_score" : 2.4194798,
+        "_source" : {
+          "working_time" : 2.0555555556,
+          "energy" : 2.089167E-4
+        },
+        "fields" : {
+          "power" : [
+            365.8865323659258
+          ]
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-01-29",
+        "_type" : "mydoctype",
+        "_id" : "gWbfmGgBzz0aNxP3Qvwh",
+        "_score" : 2.4194798,
+        "_source" : {
+          "working_time" : 16.2083333333,
+          "energy" : 0.0021651944
+        },
+        "fields" : {
+          "power" : [
+            480.90690502897206
+          ]
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-01-29",
+        "_type" : "mydoctype",
+        "_id" : "hmbfmGgBzz0aNxP3Qvwh",
+        "_score" : 2.4194798,
+        "_source" : {
+          "working_time" : 16.5972222222,
+          "energy" : 0.00252425
+        },
+        "fields" : {
+          "power" : [
+            547.5193485635002
+          ]
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-01-29",
+        "_type" : "mydoctype",
+        "_id" : "D2b7mGgBzz0aNxP3E_1D",
+        "_score" : 2.4194798,
+        "_source" : {
+          "working_time" : 17.7222222222,
+          "energy" : 0.0018361667
+        },
+        "fields" : {
+          "power" : [
+            372.98936978127864
+          ]
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-01-29",
+        "_type" : "mydoctype",
+        "_id" : "EWb7mGgBzz0aNxP3E_1D",
+        "_score" : 2.4194798,
+        "_source" : {
+          "working_time" : 108.8611111111,
+          "energy" : 0.0091488889
+        },
+        "fields" : {
+          "power" : [
+            302.5506522433474
+          ]
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-01-29",
+        "_type" : "mydoctype",
+        "_id" : "FWb7mGgBzz0aNxP3E_1D",
+        "_score" : 2.4194798,
+        "_source" : {
+          "working_time" : 17.2361111111,
+          "energy" : 0.0015269444
+        },
+        "fields" : {
+          "power" : [
+            318.92345902320415
+          ]
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-01-29",
+        "_type" : "mydoctype",
+        "_id" : "F2b7mGgBzz0aNxP3E_1D",
+        "_score" : 2.4194798,
+        "_source" : {
+          "working_time" : 26.5972222222,
+          "energy" : 0.0023562222
+        },
+        "fields" : {
+          "power" : [
+            318.9205201759853
+          ]
+        }
+      }
+    ]
+  },
+  "aggregations" : {
+    "pick_and_place_2_idle_power" : {
+      "value" : 556.0965874133143
+    },
+    "pick_and_place_2_idle_energy" : {
+      "value" : 0.0014813158838457407
+    },
+    "pick_and_place_2_idle_delay" : {
+      "value" : 10.85981912460438
+    }
+  }
 }
