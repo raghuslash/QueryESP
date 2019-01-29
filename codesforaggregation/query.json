@@ -4,12 +4,12 @@
       "must": [
         {
           "match": {
-            "device": "screenprinter"
+            "device": "pickandplace1"
           }
         },
         {
           "match": {
-            "event": 1
+            "event": 1 
           }
         }
       ],
@@ -29,7 +29,7 @@
         "power" : {
             "script" : {
                 "lang": "painless",
-                "source": "doc['energy'].value*3600 / doc['working_time'].value"
+                "source": "doc['energy'].value*3600000 / doc['working_time'].value"
             }
         }
     },
@@ -38,7 +38,7 @@
 	    "avg_power": {
 		    "avg": {
 			    "script": {
-				    "source": "doc['energy'].value*3600 / doc['working_time'].value"
+				    "source": "doc['energy'].value*3600000 / doc['working_time'].value"
 			    }
 		    }
 	    }

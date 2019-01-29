@@ -2,12 +2,20 @@
   "error" : {
     "root_cause" : [
       {
-        "type" : "json_e_o_f_exception",
-        "reason" : "Unexpected end-of-input: expected close marker for Object (start marker at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@667ccba3; line: 1, column: 1])\n at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@667ccba3; line: 1, column: 3]"
+        "type" : "x_content_parse_exception",
+        "reason" : "[1:236] [script] failed to parse field [source]"
       }
     ],
-    "type" : "json_e_o_f_exception",
-    "reason" : "Unexpected end-of-input: expected close marker for Object (start marker at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@667ccba3; line: 1, column: 1])\n at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@667ccba3; line: 1, column: 3]"
+    "type" : "x_content_parse_exception",
+    "reason" : "[1:236] [script] failed to parse field [source]",
+    "caused_by" : {
+      "type" : "unchecked_i_o_exception",
+      "reason" : "com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input in VALUE_STRING\n at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@3ae86dee; line: 1, column: 527]",
+      "caused_by" : {
+        "type" : "json_e_o_f_exception",
+        "reason" : "Unexpected end-of-input in VALUE_STRING\n at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@3ae86dee; line: 1, column: 527]"
+      }
+    }
   },
-  "status" : 500
+  "status" : 400
 }
