@@ -23,22 +23,22 @@
 }
 },
     
-    // "_source" : ["energy", "working_time"],
+    "_source" : ["energy", "working_time"],
 
-    // "script_fields" : {
-    //     "power" : {
-    //         "script" : {
-    //             "lang": "painless",
-    //             "source": "doc['energy'].value*3600000 / doc['working_time'].value"
-    //         }
-    //     }
-    // },
+    "script_fields" : {
+        "power" : {
+            "script" : {
+                "lang": "painless",
+                "source": "doc['energy'].value*3600 / doc['working_time'].value"
+            }
+        }
+    },
 
     "aggs": {
 	    "avg_power": {
 		    "avg": {
 			    "script": {
-				    "source": "doc['energy'].value*3600000 / doc['working_time'].value"
+				    "source": "doc['energy'].value*3600 / doc['working_time'].value"
 			    }
 		    }
 	    }
