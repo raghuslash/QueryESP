@@ -12,6 +12,7 @@ t=$(cat temp | jq '.aggregations.screen_printer_idle_delay.value')
 t=$(bc -l <<< "scale=1; $t/1")
 #e=$(bc -l <<< "scale=1; $e*3600000/1")
 p0=$(cat temp | jq '.aggregations.screen_printer_idle_power.value')
+p0=$(bc -l <<< "scale=1; $p0/1")
 #echo "screen_printer.idle_delay=$t" >> DTparameters.txt
 
 
@@ -22,6 +23,7 @@ p=$(cat temp | jq '.hits.total')
 t=$(bc -l <<< "scale=1; $t/1")
 #e=$(bc -l <<< "scale=1; $e*3600000/1")
 p1=$(cat temp | jq '.aggregations.screen_printer_printing_power.value')
+p1=$(bc -l <<< "scale=1; $p1/1")
 echo "screen_printer.printing_delay=$t" >> DTparameters.txt
 
 
@@ -32,6 +34,7 @@ c=$(cat temp | jq '.hits.total')
 t=$(bc -l <<< "scale=1; $t/1")
 #e=$(bc -l <<< "scale=1; $e*3600000/1")
 p2=$(cat temp | jq '.aggregations.screen_printer_cleaning_power.value')
+p2=$(bc -l <<< "scale=1; $p2/1")
 ratio=$((($p+$c-1)/$c))
 
 
@@ -48,6 +51,7 @@ t=$(cat temp | jq '.aggregations.pick_and_place_1_idle_delay.value')
 t=$(bc -l <<< "scale=1; $t/1")
 #e=$(bc -l <<< "scale=1; $e*3600000/1")
 p0=$(cat temp | jq '.aggregations.pick_and_place_1_idle_power.value')
+p0=$(bc -l <<< "scale=1; $p0/1")
 #echo "pick_and_place_1.idle_delay=$t" >> DTparameters.txt
 
 
@@ -57,6 +61,7 @@ t=$(cat temp | jq '.aggregations.pick_and_place_1_processing_delay.value')
 t=$(bc -l <<< "scale=1; $t/1")
 #e=$(bc -l <<< "scale=1; $e*3600000/1")
 p1=$(cat temp | jq '.aggregations.pick_and_place_1_processing_power.value')
+p1=$(bc -l <<< "scale=1; $p1/1")
 echo "pick_and_place_1.processing_delay=$t" >> DTparameters.txt
 
 echo "pick_and_place_1.set_power_ratings([$p0,$p0,$p1,$p0])" >> DTparameters.txt
@@ -68,6 +73,7 @@ t=$(cat temp | jq '.aggregations.pick_and_place_2_idle_delay.value')
 t=$(bc -l <<< "scale=1; $t/1")
 #e=$(bc -l <<< "scale=1; $e*3600000/1")
 p0=$(cat temp | jq '.aggregations.pick_and_place_2_idle_power.value')
+p0=$(bc -l <<< "scale=1; $p0/1")
 #echo "pick_and_place_2.idle_delay=$t" >> DTparameters.txt
 
 sh runEventQ.sh queries/pickandplace21Q.json
@@ -76,6 +82,7 @@ t=$(cat temp | jq '.aggregations.pick_and_place_2_processing_delay.value')
 t=$(bc -l <<< "scale=1; $t/1")
 #e=$(bc -l <<< "scale=1; $e*3600000/1")
 p1=$(cat temp | jq '.aggregations.pick_and_place_2_processing_power.value')
+p1=$(bc -l <<< "scale=1; $p1/1")
 echo "pick_and_place_2.processing_delay=$t" >> DTparameters.txt
 
 echo "pick_and_place_2.set_power_ratings([$p0,$p0,$p1,$p0])" >> DTparameters.txt
@@ -86,6 +93,7 @@ t=$(cat temp | jq '.aggregations.reflowoven_off_delay.value')
 t=$(bc -l <<< "scale=1; $t/1")
 #e=$(bc -l <<< "scale=1; $e*3600000/1")
 p0=$(cat temp | jq '.aggregations.reflowoven_off_power.value')
+p0=$(bc -l <<< "scale=1; $p0/1")
 
 sh runStateQ.sh queries/reflowoven1Q.json
 t=$(cat temp | jq '.aggregations.reflowoven_maintain_delay.value')
@@ -93,6 +101,7 @@ t=$(cat temp | jq '.aggregations.reflowoven_maintain_delay.value')
 t=$(bc -l <<< "scale=1; $t/1")
 #e=$(bc -l <<< "scale=1; $e*3600000/1")
 p1=$(cat temp | jq '.aggregations.reflowoven_maintain_power.value')
+p1=$(bc -l <<< "scale=1; $p1/1")
 
 sh runStateQ.sh queries/reflowoven2Q.json
 t=$(cat temp | jq '.aggregations.reflowoven_setup_delay.value')
@@ -100,6 +109,7 @@ t=$(cat temp | jq '.aggregations.reflowoven_setup_delay.value')
 t=$(bc -l <<< "scale=1; $t/1")
 #e=$(bc -l <<< "scale=1; $e*3600000/1")
 p2=$(cat temp | jq '.aggregations.reflowoven_setup_power.value')
+p2=$(bc -l <<< "scale=1; $p2/1")
 echo "reflow_oven.set_power_ratings([$p0,$p2,$p1,$p1])" >> DTparameters.txt
 
 echo "Done.. Parameters are available in DTparameters.txt"
