@@ -4,19 +4,19 @@
       "must": [
         {
           "match": {
-            "device": "pickandplace1"
+            "device": "reflowoven"
           }
         },
         {
           "match": {
-            "event": 1 
+            "event": 0
           }
         }
       ],
       "filter": {
         "range": {
           "timestamp": {
-            "gte": "now-7d"
+            "gte": "now-21d"
           }
         }
       }

@@ -89,26 +89,29 @@ echo "pick_and_place_2.set_power_ratings([$p0,$p0,$p1,$p0])" >> DTparameters.txt
 
 sh runStateQ.sh queries/reflowoven0Q.json
 t=$(cat temp | jq '.aggregations.reflowoven_off_delay.value')
-#e=$(cat temp | jq '.aggregations.reflowoven_off_energy.value')
+e=$(cat temp | jq '.aggregations.reflowoven_off_energy.value')
 t=$(bc -l <<< "scale=1; $t/1")
-#e=$(bc -l <<< "scale=1; $e*3600000/1")
-p0=$(cat temp | jq '.aggregations.reflowoven_off_power.value')
+e=$(bc -l <<< "scale=1; $e*3600000/1")
+#p0=$(cat temp | jq '.aggregations.reflowoven_off_power.value')
+p0=$(bc -l <<< "$e/$t")
 p0=$(bc -l <<< "scale=1; $p0/1")
 
 sh runStateQ.sh queries/reflowoven1Q.json
 t=$(cat temp | jq '.aggregations.reflowoven_maintain_delay.value')
-#e=$(cat temp | jq '.aggregations.reflowoven_maintain_energy.value')
+e=$(cat temp | jq '.aggregations.reflowoven_maintain_energy.value')
 t=$(bc -l <<< "scale=1; $t/1")
-#e=$(bc -l <<< "scale=1; $e*3600000/1")
-p1=$(cat temp | jq '.aggregations.reflowoven_maintain_power.value')
+e=$(bc -l <<< "scale=1; $e*3600000/1")
+#p1=$(cat temp | jq '.aggregations.reflowoven_maintain_power.value')
+p1=$(bc -l <<< "$e/$t")
 p1=$(bc -l <<< "scale=1; $p1/1")
 
 sh runStateQ.sh queries/reflowoven2Q.json
 t=$(cat temp | jq '.aggregations.reflowoven_setup_delay.value')
-#e=$(cat temp | jq '.aggregations.reflowoven_setup_energy.value')
+e=$(cat temp | jq '.aggregations.reflowoven_setup_energy.value')
 t=$(bc -l <<< "scale=1; $t/1")
-#e=$(bc -l <<< "scale=1; $e*3600000/1")
-p2=$(cat temp | jq '.aggregations.reflowoven_setup_power.value')
+e=$(bc -l <<< "scale=1; $e*3600000/1")
+#p2=$(cat temp | jq '.aggregations.reflowoven_setup_power.value')
+p2=$(bc -l <<< "$e/$t")
 p2=$(bc -l <<< "scale=1; $p2/1")
 echo "reflow_oven.set_power_ratings([$p0,$p2,$p1,$p1])" >> DTparameters.txt
 
