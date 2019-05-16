@@ -7,7 +7,7 @@ while true; do
 	echo $mdhash $oldmdhash
 	if [ "$oldmdhash" != "$mdhash" ]; then
 		echo "Change Detected!"
-		sudo cp DTparameters.txt /var/www/html/static/DTparameters/
+		sudo scp DTparameters.txt root@droplet:/var/www/html/static/DTparameters/
 		oldmdhash=$mdhash
 	fi
 done
