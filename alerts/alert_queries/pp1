@@ -1,0 +1,1 @@
+{"query":{"bool":{"must":[{"match":{"device":"pickandplace1"}},{"match":{"event":1}}],"filter":{"range":{"timestamp":{"lte":"now"}}}}},"_source":["working_time"],"aggs":{"sum_of_working_time":{"sum":{"script":{"source":"doc['working_time']"}}}}}

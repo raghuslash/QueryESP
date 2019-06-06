@@ -1,0 +1,111 @@
+{
+  "took" : 29,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 215,
+    "successful" : 215,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 11108,
+    "max_score" : 4.6937695,
+    "hits" : [
+      {
+        "_index" : "streamingevents-2019-05-30",
+        "_type" : "mydoctype",
+        "_id" : "7sysBWsBDuPMTjOQgCFB",
+        "_score" : 4.6937695,
+        "_source" : {
+          "working_time" : 84.071474
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-05-30",
+        "_type" : "mydoctype",
+        "_id" : "8MysBWsBDuPMTjOQgCFB",
+        "_score" : 4.6937695,
+        "_source" : {
+          "working_time" : 10.563272
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-05-30",
+        "_type" : "mydoctype",
+        "_id" : "lf41BmsBDuPMTjOQTD1y",
+        "_score" : 4.6937695,
+        "_source" : {
+          "working_time" : 133.744296
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-05-30",
+        "_type" : "mydoctype",
+        "_id" : "rYq1B2sBDuPMTjOQ2KbU",
+        "_score" : 4.6937695,
+        "_source" : {
+          "working_time" : 15.515088
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-05-30",
+        "_type" : "mydoctype",
+        "_id" : "r4q1B2sBDuPMTjOQ2KbU",
+        "_score" : 4.6937695,
+        "_source" : {
+          "working_time" : 15.481977
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-05-30",
+        "_type" : "mydoctype",
+        "_id" : "2q0VCGsBDuPMTjOQ8apD",
+        "_score" : 4.6937695,
+        "_source" : {
+          "working_time" : 15.644319
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-05-30",
+        "_type" : "mydoctype",
+        "_id" : "7wgNCWsBDuPMTjOQIVJR",
+        "_score" : 4.6937695,
+        "_source" : {
+          "working_time" : 7.162791
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-05-30",
+        "_type" : "mydoctype",
+        "_id" : "4TWICWsBDuPMTjOQwsH6",
+        "_score" : 4.6937695,
+        "_source" : {
+          "working_time" : 37.360131
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-05-30",
+        "_type" : "mydoctype",
+        "_id" : "aDB7CWsBDuPMTjOQHblW",
+        "_score" : 4.6937695,
+        "_source" : {
+          "working_time" : 209.088446
+        }
+      },
+      {
+        "_index" : "streamingevents-2019-05-30",
+        "_type" : "mydoctype",
+        "_id" : "HZ4wBWsBDuPMTjOQlsaB",
+        "_score" : 4.6937695,
+        "_source" : {
+          "working_time" : 41.704976
+        }
+      }
+    ]
+  },
+  "aggregations" : {
+    "sum_of_working_time" : {
+      "value" : 637199.0165090561
+    }
+  }
+}
