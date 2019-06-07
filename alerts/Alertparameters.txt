@@ -1,6 +1,0 @@
-screenprinter.solder=92.0
-screenprinter.service_in=29.0
-pickandplace1.refill1=100.0
-pickandplace1.refill2=96.0
-pickandplace2.refill1=93.3
-pickandplace2.refill2=94.0
