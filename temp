@@ -1,163 +1,163 @@
 {
-  "took" : 208,
+  "took" : 23,
   "timed_out" : false,
   "_shards" : {
-    "total" : 145,
-    "successful" : 145,
-    "skipped" : 80,
+    "total" : 300,
+    "successful" : 300,
+    "skipped" : 220,
     "failed" : 0
   },
   "hits" : {
-    "total" : 50,
-    "max_score" : 1.0266682,
+    "total" : 85,
+    "max_score" : 1.0425596,
     "hits" : [
       {
-        "_index" : "streamingstates-2019-05-07",
+        "_index" : "streamingstates-2019-06-22",
         "_type" : "mydoctype",
-        "_id" : "epowkmoBeaouywiSuPWq",
-        "_score" : 1.0266682,
+        "_id" : "vPYTfWsBWJBaJw7vzF4S",
+        "_score" : 1.0425596,
         "_source" : {
-          "working_time" : 36.0,
-          "energy" : 0.2549236944
+          "working_time" : 150.0,
+          "energy" : 1.1242527778
         },
         "fields" : {
           "power" : [
-            25492.37012863159
+            26982.067108154297
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-04-27",
+        "_index" : "streamingstates-2019-06-22",
         "_type" : "mydoctype",
-        "_id" : "kSbSXGoBeaouywiSq-ye",
-        "_score" : 1.0266682,
+        "_id" : "FvghfWsBWJBaJw7vjXEu",
+        "_score" : 1.0425596,
         "_source" : {
-          "working_time" : 144.5,
-          "energy" : 1.00278275
+          "working_time" : 31.0,
+          "energy" : 0.2018984722
         },
         "fields" : {
           "power" : [
-            24982.82165263351
+            23446.273995983986
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-04-27",
+        "_index" : "streamingstates-2019-06-22",
         "_type" : "mydoctype",
-        "_id" : "qSrgXGoBeaouywiSVPR1",
-        "_score" : 1.0229895,
+        "_id" : "GvghfWsBWJBaJw7vjXEu",
+        "_score" : 1.0425596,
         "_source" : {
-          "working_time" : 128.5,
-          "energy" : 0.8238881111
+          "working_time" : 285.0,
+          "energy" : 1.8385490833
         },
         "fields" : {
           "power" : [
-            23081.690606440086
+            23223.778574090255
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-04-27",
+        "_index" : "streamingstates-2019-06-22",
         "_type" : "mydoctype",
-        "_id" : "9yLFXGoBeaouywiSAeAu",
-        "_score" : 1.0229895,
+        "_id" : "u_YTfWsBWJBaJw7vzF4S",
+        "_score" : 1.0392207,
         "_source" : {
-          "working_time" : 38.5,
-          "energy" : 0.2655829167
+          "working_time" : 31.0,
+          "energy" : 0.2018984722
         },
         "fields" : {
           "power" : [
-            24833.72750220361
+            23446.273995983986
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-04-27",
+        "_index" : "streamingstates-2019-06-22",
         "_type" : "mydoctype",
-        "_id" : "jybSXGoBeaouywiSq-ye",
-        "_score" : 1.0229895,
+        "_id" : "F_ghfWsBWJBaJw7vjXEu",
+        "_score" : 1.0392207,
         "_source" : {
-          "working_time" : 175.0,
-          "energy" : 1.4857725278
+          "working_time" : 150.0,
+          "energy" : 1.1242527778
         },
         "fields" : {
           "power" : [
-            30564.462661743164
+            26982.067108154297
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-04-27",
+        "_index" : "streamingstates-2019-06-22",
         "_type" : "mydoctype",
-        "_id" : "kCbSXGoBeaouywiSq-ye",
-        "_score" : 1.0229895,
+        "_id" : "GPghfWsBWJBaJw7vjXEu",
+        "_score" : 1.0392207,
         "_source" : {
-          "working_time" : 8.0,
-          "energy" : 0.0561960278
+          "working_time" : 165.0,
+          "energy" : 1.3414341111
         },
         "fields" : {
           "power" : [
-            25288.211926817894
+            29267.653551968662
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-05-07",
+        "_index" : "streamingstates-2019-06-22",
         "_type" : "mydoctype",
-        "_id" : "eZowkmoBeaouywiSuPWq",
-        "_score" : 1.0202028,
+        "_id" : "uvYTfWsBWJBaJw7vzF4S",
+        "_score" : 1.0363677,
         "_source" : {
-          "working_time" : 11.0,
-          "energy" : 0.0739731111
+          "working_time" : 139.0,
+          "energy" : 0.8994188333
         },
         "fields" : {
           "power" : [
-            24209.382046352734
+            23294.300655666873
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-05-10",
+        "_index" : "streamingstates-2019-06-22",
         "_type" : "mydoctype",
-        "_id" : "BUNxn2oBMUV84tDB6qO5",
+        "_id" : "vfYTfWsBWJBaJw7vzF4S",
+        "_score" : 1.0363677,
+        "_source" : {
+          "working_time" : 55.5,
+          "energy" : 0.4552613611
+        },
+        "fields" : {
+          "power" : [
+            29530.465925062024
+          ]
+        }
+      },
+      {
+        "_index" : "streamingstates-2019-06-22",
+        "_type" : "mydoctype",
+        "_id" : "GfghfWsBWJBaJw7vjXEu",
+        "_score" : 1.0363677,
+        "_source" : {
+          "working_time" : 2.0,
+          "energy" : 0.0192976389
+        },
+        "fields" : {
+          "power" : [
+            34735.750034451485
+          ]
+        }
+      },
+      {
+        "_index" : "streamingstates-2019-06-07",
+        "_type" : "mydoctype",
+        "_id" : "LCoIMWsBSfjGeLlfMwFu",
         "_score" : 1.0186921,
         "_source" : {
-          "working_time" : 276.0,
-          "energy" : 1.8286737778
+          "working_time" : 18.0,
+          "energy" : 0.1155155833
         },
         "fields" : {
           "power" : [
-            23852.26591773655
-          ]
-        }
-      },
-      {
-        "_index" : "streamingstates-2019-04-27",
-        "_type" : "mydoctype",
-        "_id" : "jibSXGoBeaouywiSq-ye",
-        "_score" : 1.0173918,
-        "_source" : {
-          "working_time" : 151.0,
-          "energy" : 1.1932246667
-        },
-        "fields" : {
-          "power" : [
-            28447.740441126538
-          ]
-        }
-      },
-      {
-        "_index" : "streamingstates-2019-04-27",
-        "_type" : "mydoctype",
-        "_id" : "jSbSXGoBeaouywiSq-ye",
-        "_score" : 1.0168071,
-        "_source" : {
-          "working_time" : 106.5,
-          "energy" : 0.7091283333
-        },
-        "fields" : {
-          "power" : [
-            23970.53476790307
+            23103.11645269394
           ]
         }
       }
@@ -165,13 +165,13 @@
   },
   "aggregations" : {
     "reflowoven_setup_power" : {
-      "value" : 26619.37731359186
+      "value" : 25763.38434121492
     },
     "reflowoven_setup_energy" : {
-      "value" : 0.7667935700342059
+      "value" : 0.5500171386143741
     },
     "reflowoven_setup_delay" : {
-      "value" : 105.05
+      "value" : 78.93529411764706
     }
   }
 }

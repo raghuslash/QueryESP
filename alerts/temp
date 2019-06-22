@@ -1,14 +1,14 @@
 {
-  "took" : 31,
+  "took" : 33,
   "timed_out" : false,
   "_shards" : {
-    "total" : 215,
-    "successful" : 215,
+    "total" : 285,
+    "successful" : 285,
     "skipped" : 0,
     "failed" : 0
   },
   "hits" : {
-    "total" : 11108,
+    "total" : 17996,
     "max_score" : 4.6937695,
     "hits" : [
       {
@@ -105,7 +105,7 @@
   },
   "aggregations" : {
     "sum_of_working_time" : {
-      "value" : 637199.0165090561
+      "value" : 941091.6453158855
     }
   }
 }

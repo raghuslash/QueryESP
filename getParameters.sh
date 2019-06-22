@@ -117,3 +117,9 @@ echo "reflow_oven.set_power_ratings([$p0,$p2,$p1,$p1])" >> DTparameters.txt
 
 echo "Done.. Parameters are available in DTparameters.txt"
 
+echo "Sending Parameters file to cloud server..."
+scp DTparameters.txt root@droplet:/var/www/html/static/DTparameters/
+
+if [ $? -ne 0 ]; then
+	echo "Failed.."
+fi

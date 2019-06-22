@@ -21,11 +21,11 @@ echo "\"pickandplace1_refill2\":$refill2," >> alertParameters.json
 
 sh runAlert.sh alert_queries/pp2
 pp2_total=$(cat temp | jq .hits.total)
-refill1=$(bc -l <<< "scale=1; (30 - $pp2_total%30)*100/30")
+refill1=$(bc -l <<< "scale=1; (70 - $pp2_total%70)*100/70")
 echo "\"pickandplace2_refill1\":$refill1," >> alertParameters.json
-refill2=$(bc -l <<< "scale=1; (50 - $pp2_total%50)*100/50")
+refill2=$(bc -l <<< "scale=1; (40 - $pp2_total%40)*100/40")
 echo "\"pickandplace2_refill2\":$refill2" >> alertParameters.json
 
 echo "}" >> alertParameters.json
-
+cat alertParameters.json
 cp alertParameters.json ../../Desktop/freeboard-alerts/
