@@ -1,163 +1,163 @@
 {
-  "took" : 16,
+  "took" : 29,
   "timed_out" : false,
   "_shards" : {
-    "total" : 320,
-    "successful" : 320,
-    "skipped" : 245,
+    "total" : 460,
+    "successful" : 460,
+    "skipped" : 350,
     "failed" : 0
   },
   "hits" : {
-    "total" : 88,
-    "max_score" : 1.0281708,
+    "total" : 288,
+    "max_score" : 1.0240976,
     "hits" : [
       {
-        "_index" : "streamingstates-2019-06-24",
+        "_index" : "streamingstates-2019-07-29",
         "_type" : "mydoctype",
-        "_id" : "nZMJimsBifjPc4caJX7c",
-        "_score" : 1.0281708,
+        "_id" : "nPaePGwBDeknO2J3FRrE",
+        "_score" : 1.0240976,
         "_source" : {
-          "working_time" : 95.5,
-          "energy" : 0.7956517778
+          "working_time" : 33.0,
+          "energy" : 0.2511025
         },
         "fields" : {
           "power" : [
-            29993.1566128556
+            27393.000776117497
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-06-24",
+        "_index" : "streamingstates-2019-07-29",
         "_type" : "mydoctype",
-        "_id" : "Ro_7iWsBifjPc4cay4Ep",
-        "_score" : 1.0281708,
+        "_id" : "QYt9O2wBDeknO2J3q_6M",
+        "_score" : 1.0229895,
         "_source" : {
-          "working_time" : 158.0,
-          "energy" : 1.2369310556
+          "working_time" : 150.0,
+          "energy" : 0.9930103056
         },
         "fields" : {
           "power" : [
-            28183.23992475679
+            23832.246780395508
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-06-24",
+        "_index" : "streamingstates-2019-07-29",
         "_type" : "mydoctype",
-        "_id" : "npMJimsBifjPc4caJX7c",
-        "_score" : 1.0219789,
+        "_id" : "Qot9O2wBDeknO2J3q_6M",
+        "_score" : 1.0229895,
         "_source" : {
-          "working_time" : 260.0,
-          "energy" : 1.6958200278
+          "working_time" : 220.5,
+          "energy" : 1.8072026389
         },
         "fields" : {
           "power" : [
-            23480.58425463163
+            29505.35015184052
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-06-23",
+        "_index" : "streamingstates-2019-07-29",
         "_type" : "mydoctype",
-        "_id" : "tLUEgmsBWJBaJw7vIRC1",
-        "_score" : 1.0210534,
+        "_id" : "m_aePGwBDeknO2J3FRrE",
+        "_score" : 1.0229895,
         "_source" : {
-          "working_time" : 54.0,
-          "energy" : 0.3436685556
+          "working_time" : 71.0,
+          "energy" : 0.46645725
         },
         "fields" : {
           "power" : [
-            22911.23668352763
+            23651.353406234528
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-06-23",
+        "_index" : "streamingstates-2019-07-29",
         "_type" : "mydoctype",
-        "_id" : "trUEgmsBWJBaJw7vIRC1",
-        "_score" : 1.0210534,
+        "_id" : "nvaePGwBDeknO2J3FRrE",
+        "_score" : 1.0229895,
         "_source" : {
-          "working_time" : 41.0,
-          "energy" : 0.3249414444
+          "working_time" : 152.0,
+          "energy" : 0.9294121111
         },
         "fields" : {
           "power" : [
-            28531.444944986484
+            22012.392470711155
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-06-23",
+        "_index" : "streamingstates-2019-07-29",
         "_type" : "mydoctype",
-        "_id" : "F6q_gWsBWJBaJw7vmsx8",
-        "_score" : 1.0210534,
+        "_id" : "oZGLO2wBDeknO2J3dA8V",
+        "_score" : 1.0186921,
         "_source" : {
-          "working_time" : 8.0,
-          "energy" : 0.0491011667
+          "working_time" : 80.5,
+          "energy" : 0.6692226944
         },
         "fields" : {
           "power" : [
-            22095.52489221096
+            29927.972236775462
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-06-23",
+        "_index" : "streamingstates-2019-07-29",
         "_type" : "mydoctype",
-        "_id" : "X7cRgmsBWJBaJw7v2yI1",
-        "_score" : 1.0210534,
+        "_id" : "opGLO2wBDeknO2J3dA8V",
+        "_score" : 1.0186921,
         "_source" : {
-          "working_time" : 47.0,
-          "energy" : 0.3616928889
+          "working_time" : 267.0,
+          "energy" : 1.7289841111
         },
         "fields" : {
           "power" : [
-            27704.135154155974
+            23312.145404601364
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-06-23",
+        "_index" : "streamingstates-2019-07-29",
         "_type" : "mydoctype",
-        "_id" : "YLcRgmsBWJBaJw7v2yI1",
-        "_score" : 1.0210534,
+        "_id" : "nfaePGwBDeknO2J3FRrE",
+        "_score" : 1.0186921,
         "_source" : {
-          "working_time" : 41.0,
-          "energy" : 0.3249414444
+          "working_time" : 17.0,
+          "energy" : 0.1470626389
         },
         "fields" : {
           "power" : [
-            28531.444944986484
+            31142.67762969522
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-06-23",
+        "_index" : "streamingstates-2019-07-23",
         "_type" : "mydoctype",
-        "_id" : "YbcRgmsBWJBaJw7v2yI1",
-        "_score" : 1.0210534,
+        "_id" : "bVnlHGwBDeknO2J3iV1f",
+        "_score" : 1.0129035,
         "_source" : {
-          "working_time" : 155.0,
-          "energy" : 0.9315971111
+          "working_time" : 15.0,
+          "energy" : 0.1062350833
         },
         "fields" : {
           "power" : [
-            21637.09425157116
+            25496.420860290527
           ]
         }
       },
       {
-        "_index" : "streamingstates-2019-06-23",
+        "_index" : "streamingstates-2019-07-19",
         "_type" : "mydoctype",
-        "_id" : "XrcRgmsBWJBaJw7v2yI1",
-        "_score" : 1.0194181,
+        "_id" : "wl7wB2wBDeknO2J33_mA",
+        "_score" : 1.0111732,
         "_source" : {
-          "working_time" : 54.0,
-          "energy" : 0.3436685556
+          "working_time" : 157.0,
+          "energy" : 1.2116118889
         },
         "fields" : {
           "power" : [
-            22911.23668352763
+            27782.182936455793
           ]
         }
       }
@@ -165,13 +165,13 @@
   },
   "aggregations" : {
     "reflowoven_setup_power" : {
-      "value" : 26009.12505350823
+      "value" : 24594.291554877294
     },
     "reflowoven_setup_energy" : {
-      "value" : 0.6038249836895954
+      "value" : 0.4337480372503503
     },
     "reflowoven_setup_delay" : {
-      "value" : 85.54545454545455
+      "value" : 64.67534722222223
     }
   }
 }
